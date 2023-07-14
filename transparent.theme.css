@@ -1,52 +1,65 @@
 /**
- * @name purple student girl
- * @author Gibbu#1211
- * @version 2.0.0
- * @description Display your picture of choice with adjustable blur and brightness.
- * @source https://github.com/DiscordStyles/FrostedGlass
- * @invite ZHthyCw
- * @donate https://paypal.me/IanRGibson
- * @website https://gibbu.me
- * @authorId 174868361040232448
- * @BDEditor Frosted Glass
+    * @name Vibrant Glass
+    * @version 1.1
+    * @description Simple customizable glass theme.
+    * @author Kaynooo#8080
+    *
+    * @source https://github.com/Kayno0o/vibrant-glass-theme
+**/
+
+/*
+ __      ___ _                     _      _____ _               
+ \ \    / (_) |                   | |    / ____| |              
+  \ \  / / _| |__  _ __ __ _ _ __ | |_  | |  __| | __ _ ___ ___ 
+   \ \/ / | | '_ \| '__/ _` | '_ \| __| | | |_ | |/ _` / __/ __|
+    \  /  | | |_) | | | (_| | | | | |_  | |__| | | (_| \__ \__ \
+     \/   |_|_.__/|_|  \__,_|_| |_|\__|  \_____|_|\__,_|___/___/
+
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Fasthand:wght@100;300;400;500;700&display=swap');
-@import url('https://discordstyles.github.io/FrostedGlass/dist/FrostedGlass.css');
-@import url('https://discordstyles.github.io/Addons/windows-titlebar.css');
+@import url("https://raw.githack.com/Kayno0o/vibrant-glass-theme/main/glass_remote.theme.css");
 
-:root {
-  --background-image: url('https://gifdb.com/images/high/anime-student-back-ride-anime-aesthetic-unw5vir83sb6x7ll.gif');
-  --background-image-blur: 0px;
-  --background-image-size: cover;
-  --background-image-position: center;
-  --popout-image: url('https://gifdb.com/images/high/anime-student-back-ride-anime-aesthetic-unw5vir83sb6x7ll.gif');
-  --popout-image-blur: 0px;
-  --popout-image-size: cover;
-  --popout-image-position: center;
-  --overlay-image: url('https://gifdb.com/images/high/anime-student-back-ride-anime-aesthetic-unw5vir83sb6x7ll.gif');
-  --overlay-image-blur: 0px;
-  --overlay-image-size: cover;
-  --overlay-image-position: center;
-  --home-button-image: url('https://gifdb.com/images/high/anime-student-back-ride-anime-aesthetic-unw5vir83sb6x7ll.gif');
-  --home-button-size: cover;
-  --home-button-position: center;
-  --serverlist-brightness: 0;
-  --left-brightness: 0;
-  --middle-brightness: 0;
-  --right-brightness: 0;
-  --overlay-brightness: 0;
-  --gradient-primary: 103,58,183;
-  --gradient-secondary: 63,81,181;
-  --link-colour: #00b0f4;
-  --scrollbar-colour: rgba(255,255,255,0.05);
-  --gradient-direction: 320deg;
-  --tint-colour: 255,51,159;
-  --tint-brightness: 0;
-  --font: Fasthand;
-  --window-padding: 0px;
-  --window-roundness: 34px;
-  --update-notice-1: none;
+/*
+to customize rgb color : https://www.google.com/search?q=color+picker and copy the RGB thing
+to create custom gradient : https://cssgradient.io/ and copy the linear-gradient
+*/
+
+/* DEFINE MAIN VARIABLES */
+
+.theme-dark {
+    /*
+    name of the Discord window (top left)
+    default : "Vibrant Glass" */
+    --window-name: "Vibrant Glass";
+    /*
+    color of the Discord window name
+    default : rgb(255, 255, 255) */
+    --window-name-color: rgb(255, 255, 255);
+    /*
+    opacity, but lighter
+    default : 0.2 */
+    --light-opacity: 0.2;
+    /*
+    opacity used everywhere to make this glass effect 
+    default : 0.5 */
+    --opacity: 0.5;
+    /*
+    opacity, but darker
+    default : 0.75 */
+    --dark-opacity: 0.75;
+    /*
+    it's just the Discord background URL, it has to be a direct link (ending with .png, .jpg, .gif)
+    default : url('https://cdn.discordapp.com/attachments/696040243748536401/850445513542205531/1-IrFMpUu.png') */
+    --background-url: url('https://cdn.discordapp.com/attachments/696040243748536401/850445513542205531/1-IrFMpUu.png');
+    /*
+    background color used for opacity
+    default : 0, 0, 0 */
+    --background-color: 0, 0, 0;
 }
 
-/* Any custom CSS below here */
+/* BACKGROUND */
+
+.app-2CXKsg>.bg-1QIAus {
+    background: var(--background-url) !important;
+    background-size: cover !important;
+}
