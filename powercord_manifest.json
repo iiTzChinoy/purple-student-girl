@@ -1,8 +1,8 @@
 {
-    "name": "Translucence",
-    "description": "A translucent/frosted glass Discord theme",
-    "version": "1.0.6.3",
-    "author": "CapnKitten",
-    "theme": "Translucence.theme.css",
+    "name": "Purple Student Girl",
+    "description": "A Purple Student Girl Riding A Bike!",
+    "version": "1.0.0.1",
+    "author": "iiTzChinoy",
+    "theme": "purplestudentgirl.theme.css",
     "license": "MIT"
 }
